@@ -9,12 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Created by jwy on 2017-02-27.
  */
 
 public class ListViewActivity extends Activity {
-
+    private ArrayAdapter<String> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +26,11 @@ public class ListViewActivity extends Activity {
 
         ListView listView = (ListView) findViewById(R.id.video_list);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+        adapter = new ArrayAdapter<String>(
             this
             , R.layout.listitem_clip_detail
             , R.id.txt_title
-            , new String[]{"클립 제목 1", "클립 제목 2", "클립 제목 3"}
+            , new ArrayList<String>(Arrays.asList(new String[]{"클립 제목 1", "클립 제목 2", "클립 제목 3"}))
         );
         listView.setAdapter(adapter);
 
@@ -38,5 +41,11 @@ public class ListViewActivity extends Activity {
             }
         };
         listView.setOnItemClickListener(mMessageClickedHandler);
+    }
+
+    public void onClickMore(View view) {
+        Integer nextIndex = adapter.getCount() + 1;
+        String title = "클립 제목 " + Integer.toString(nextIndex);
+        adapter.add(title);
     }
 }
