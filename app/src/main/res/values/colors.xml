@@ -1,6 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!-- AppTheme -->
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="themeBackground">#FFFFFF</color>
+
+    <!-- 공통 -->
+    <color name="common_progress_circle">#01d672</color>
+    <color name="common_title_bar_bg">#04081f</color>
+    <color name="common_watched_view_text">#CCFFFFFF</color>
+    <color name="common_watched_view_bg">#B2181d1e</color>
+    <color name="common_img_transparent_bg">#66c3c3c3</color>
+    <color name="common_title_text">#26292c</color>
+    <color name="common_img_loading_bg">#e4e6e8</color>
+
+    <!-- 공통 목록  -->
+    <color name="common_listitem_title">@color/common_title_text</color>
+    <color name="common_listitem_sub_title">#737c89</color>
+
+    <!-- Slide Menu -->
+    <color name="slide_menu_title_text">@color/common_title_text</color>
+    <color name="slide_menu_category_text">#00cc52</color>
+    <color name="slide_menu_sub_title_text">#9b9b9c</color>
+
+    <!-- 설정 -->
+    <color name="settings_off_text">#7F26292c</color>
+    <color name="settings_title_text">#26292c</color>
+
+
+    <!-- NaverProgressBarArea.java -->
+    <color name="naver_progressbar_area_text_color">#FFFFFFFF</color>
+    <color name="naver_progressbar_area_shadow_layer_color">#00FFFFFF</color>
+
+    <!-- NaverSeekBar.java -->
+    <color name="naver_seek_bar_bg">#82000000</color>
+    <color name="naver_seek_bar_fg_start">#CC61BB6F</color>
+    <color name="naver_seek_bar_fg_end">#CC47998A</color>
+    <color name="naver_seek_bar_thumb">#4C000000</color>
+
+    <!-- Player  -->
+    <color name="player_controller_volume_seekbar_bg">#27ffffff</color>
+    <color name="player_controller_volume_seekbar_fg">#ff0aeb7f</color>
+    <color name="player_controller_brightness_seekbar_bg">#27ffffff</color>
+    <color name="player_controller_brightness_seekbar_fg">#ff0aeb7f</color>
+    <color name="player_controller_volume_textbg_gradient_start">#4C000000</color>
+    <color name="player_controller_volume_textbg_gradient_end">#00000000</color>
+    <color name="player_controller_brightness_textbg_gradient_start">#4C000000</color>
+    <color name="player_controller_brightness_textbg_gradient_end">#00000000</color>
+
+    <!-- 재생목록 -->
+    <color name="play_list_panel_bg_color">#FF2D323C</color>
+    <color name="play_list_tab_enable_color">#FF2D323C</color>
+    <color name="play_list_tab_disable_color">#FF1D212A</color>
+    <color name="play_list_tab_title_text_enable_color">#FFDBDFE4</color>
+    <color name="play_list_tab_title_text_disable_color">#FF6A737E</color>
+    <color name="play_list_tab_total_count_text_enable_color">#FF8D9BA4</color>
+    <color name="play_list_tab_total_count_text_disable_color">#FF5E6670</color>
+    <color name="play_list_empty_message_text_color">#FF6A737E</color>
+    <color name="play_list_load_error_message_text_color">#FF6A737E</color>
+    <color name="play_list_load_error_message_refresh_text_color">#FF525A64</color>
+    <color name="play_list_load_error_message_refresh_button_bg_color">#FF262B33</color>
+    <color name="play_list_load_error_message_refresh_button_text_color">#FF609580</color>
+    <color name="play_list_item_play_time_text_color">#FFFFFFFF</color>
+    <color name="play_list_item_title_text_color">#FFDDDDDD</color>
+    <color name="play_list_item_title_text_playing_color">#FF609580</color>
+    <color name="play_list_item_channel_name_text_color">#FF4A616B</color>
+    <color name="play_list_item_play_count_text_color">#FF6F767E</color>
+    <color name="play_list_item_comment_count_text_color">#FF6F767E</color>
+    <color name="play_list_item_separator_color">#FF28282D</color>
+    <color name="play_list_item_select_color">#FF343B46</color>
+    <color name="play_list_item_thumbnail_innerline_color">#FF609580</color>
+    <color name="play_list_comment_item_name_text_color">#FF577489</color>
+    <color name="play_list_comment_item_time_text_color">#FF6F767E</color>
+    <color name="play_list_comment_item_contents_text_color">#FF8D9BA4</color>
+
+    <!-- 멀티트랙 -->
+    <color name="multitrack_variable_length_track_end_back">#CC000000</color>
+    <color name="multitrack_variable_length_track_end_text_color">#FF65666A</color>
+    <color name="multitrack_variable_length_track_end_tooltip_text_color">#FF85868A</color>
+
+    <!-- No Network Connection -->
+    <color name="noNetworkConnection_notification_textcolor">#FFFFFFFF</color>
+    <color name="noNetworkConnection_notification_background">#CC000000</color>
+
+    <!-- Notification -->
+    <color name="noti_listitem_title">#FF1d1d1d</color>
+    <color name="noti_listitem_seperator">#e0e0e0</color>
+    <color name="noti_listitem_not_watched">#fefef5</color>
+    <color name="noti_listitem_not_watched_pressed">#f6f6eb</color>
+
+
+    <!-- Title Bar -->
+    <color name="titlebar_background">#FF000000</color>
+
+    <!-- Main UI -->
+    <color name="default_pager_tab_selected">#FF10C257</color>
+    <color name="default_pager_tab_default">#FF4f5153</color>
+    <color name="mainui_pager_tab_area">#FAFAFA</color>
+    <color name="mainui_pagetab_view_title_enable">#FF10c257</color>
+    <color name="mainui_pagetab_view_title_disable">#FF4F5153</color>
+    <color name="mainui_pagetab_view_select_underbar">#FF10c257</color>
+
+    <!-- Comment -->
+    <color name="CommentUi_SingleItem_MainText">#FF26292C</color>
+    <color name="CommentUi_SingleItem_MainText_Small">#FF313336</color>
+    <color name="CommentUi_SingleItem_SubText_My">#FF04894F</color>
+    <color name="CommentUi_SingleItem_SubText1">#FF018D82</color>
+    <color name="CommentUi_SingleItem_SubText2">#FF07924C</color>
+    <color name="CommentUi_SingleItem_SubText3">#FF0786BA</color>
+    <color name="CommentUi_CommentCount_TextColor">#FFFFFFFF</color>
+
+    <color name="CommentUi_WriteConfirmButtonText_Default">#FF2a2a2a</color>
+    <color name="CommentUi_WriteConfirmButtonText_Dimmed">#FFc7c7c7</color>
+    <color name="CommentUi_WriteConfirmButtonText_Pressed">#FF05c548</color>
+    <color name="CommentUi_WriteField_CommentLength">#7FFFFFFF</color>
+    <color name="CommentUi_WriteField_ButtonDivider">#FFe4e4e4</color>
+    <color name="CommentUi_WriteField_TextColorHint">#FFCFCFCF</color>
+    <color name="CommentUi_WriteField_TextColor">#FF26292C</color>
+
+    <color name="CommentUi_Dialog_DimmedBG">#33000000</color>
+    <color name="CommentUi_Dialog_LoginForWrite">#FF26292C</color>
+    <color name="CommentUi_Dialog_Button_Default">#FF373737</color>
+    <color name="CommentUi_Dialog_Button_Pressed">#FFFFFFFF</color>
+    <color name="CommentUi_Dialog_ReportMain">#FF26292C</color>
+    <color name="CommentUi_Dialog_ReportSub">#FFa0a2a5</color>
+    <color name="CommentUi_Dialog_Report_Title">#FF26292C</color>
+    <color name="CommentUi_Dialog_Report_Writer_Front_Title">#FF9C9C9E</color>
+    <color name="CommentUi_Dialog_Report_Writer_Real_Title">#FF404245</color>
+    <color name="CommentUi_Dialog_Report_ReportType_Text">#FF26292C</color>
+    <color name="CommentUi_Dialog_Report_Alert_Text">#FF90959d</color>
+    <color name="CommentUi_Dialog_Report_Divider">#FFDEDEDD</color>
+
+    <!-- Live OnAir List -->
+    <color name="LiveOnAir_MainText">#FFFFFFFF</color>
+    <color name="LiveOnAir_CountText">#FFFFFFFF</color>
+
+    <!-- Live OnAir SingleView-->
+    <color name="LiveOnairSingleItem_Background_Gradient_Start_Small">#59000000</color>
+    <color name="LiveOnairSingleItem_Background_Gradient_Start">#BF000000</color>
+    <color name="LiveOnairSingleItem_Background_Gradient_End">#00000000</color>
+    <color name="LiveOnairSingleItem_SelectedColor">#7F0AEB7F</color>
+    <color name="LiveOnairSingleItem_PressedColor">#3F0AEB7F</color>
+    <color name="LiveOnairSingleItem_TitleText">#D8FFFFFF</color>
+    <color name="LiveOnairSingleItem_ConnectionNumber">#66FFFFFF</color>
+
+    <color name="header_normal">#ffe74c3c</color>
+    <color name="header_pressed">#ffc0392b</color>
+
+    <!-- Live OnAir SingleView-->
+    <color name="Live_schedule_date_click_text_color">#0aeb7f</color>
+    <color name="Live_schedule_date_text_color">#66ffffff</color>
+
+    <color name="Live_schedule_date_week_click_text_color">#0aeb7f</color>
+    <color name="Live_schedule_date_week_text_color">#66ffffff</color>
+
+    <!-- Search -->
+    <color name="default_listitem_bg_default">#FFFFFF</color>
+    <color name="default_listitem_bg_pressed">#F1F1F1</color>
+    <color name="home_listitem_bg_pressed">#F6F6F6</color>
+    <color name="home_listitem_bg_default">#FFFFFF</color>
+    <color name="listitem_error_img">#E8EAEC</color>
+    <!-- home -->
+    <color name="Home_Clip_Bg">#F1F1F1</color>
+
+    <!-- Top Rank -->
+    <color name="top_rank_itemlist_up_side_text_color">#FF3551</color>
+    <color name="top_rank_itemlist_down_side_text_color">#0E96E5</color>
+    <color name="top_rank_itemlist_title">@color/common_listitem_title</color>
+    <color name="top_rank_itemlist_sub_title">@color/common_listitem_sub_title</color>
+
+    <!-- Today-->
+    <color name="Today_Clip_Default_Bg">#ffe8eaec</color>
+
+
+    <!-- Today Recommend-->
+    <color name="TodayRecommendClipView_Bg_Pressed">#19000000</color>
+    <color name="TodayRecommendClipView_Bg_Default">#00000000</color>
+    <!-- ChannelView-->
+
+    <color name="ChannelView_Click_Bg">#12000000</color>
+    <color name="ChannelView_Default_Bg">#00000000</color>
+
+    <!-- TodayShowedTitleView-->
+    <color name="TodayShowedTitleView_Setting_Text_Default">#FFFFFF</color>
+    <color name="TodayShowedTitleView_Setting_Text_Pressed">#F8F8F8</color>
+
+
+    <!-- TodayShowedTitleView-->
+    <color name="TopRankSortButton_Normal">#fa222526</color>
+    <color name="TopRankSortButton_Pressed">#3f000000</color>
+
+    <!-- HomeClipTitle-->
+    <color name="HomeClipTitle_Name">#1d1d1d</color>
+
+    <!-- SubscriptionButtonControl -->
+    <color name="Subscription_Before_Text_Color">#1d1d1d</color>
+    <color name="Subscription_Text_Color">#0ec157</color>
+    <color name="Subscription_Before_Stroke_Color">#FFDEDEDE</color>
+    <color name="Subscription_Stroke_Color">#c4dfcf</color>
+
+    <!-- MY -->
+    <color name="My_Subscription_Non_Exposure_ChannelName">#6d6e6e</color>
+
+
+    <!-- Subscription EditBtn -->
+
+    <color name="My_Subscription_EditBtn_Pressed">#f8f8f8</color>
+    <color name="My_Subscription_EditText_Default">#1d1d1d</color>
+    <color name="My_Subscription_EditText_Pressed">#1d1d1d</color>
+    <color name="My_Subscription_EditText_Disabled">#dfdfdf</color>
+    <color name="My_Subscription_EditStroke_Default">#dedede</color>
+
+
+    <color name="My_Subscription_EditCompleteBtn_Default">#0ac657</color>
+    <color name="My_Subscription_EditCompleteBtn_Pressed">#0ac657</color>
+    <color name="My_Subscription_EditCompleteBtn_Stroke_Default">#0ac657</color>
+    <color name="My_Subscription_EditCompleteBtnText_Default">#ffffff</color>
+    <color name="My_Subscription_EditCompleteBtnText_Pressed">#ffffff</color>
+
+
+    <color name="Settings_Etiquette_TimeText_Default">#4d5c62</color>
+    <color name="Settings_Etiquette_TimeText_Disabled">#7F4d5c62</color>
+
+
 </resources>

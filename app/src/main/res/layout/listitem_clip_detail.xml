@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/VodEnd_Single_Clip_MainView"
+    android:layout_width="match_parent"
+    android:layout_height="78.00dp"
+    android:background="#FFFFFF"
+    android:paddingBottom="@dimen/Search_Result_Video_Root_PaddingBottom"
+    android:paddingTop="@dimen/Search_Result_Video_Root_PaddingTop" >
+
+    <LinearLayout
+        android:id="@+id/right_dummy"
+        android:layout_width="@dimen/Search_Result_Video_RightDummy_Width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/Search_Result_Video_ThumeNailImg_Width"
+        android:layout_height="@dimen/Search_Result_Video_ThumeNailImg_Height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/Search_Result_Video_ThumeNailImg_MarginLeft"
+        android:layout_marginRight="@dimen/Search_Result_Video_ThumeNailImg_MarginRight"
+        android:background="@color/common_img_loading_bg"
+    />
+    <RelativeLayout
+        android:layout_width="@dimen/Search_Result_Video_ThumeNailImg_Width"
+        android:layout_height="@dimen/Search_Result_Video_ThumeNailImg_Height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/Search_Result_Video_ThumeNailImg_MarginLeft"
+        android:layout_marginRight="@dimen/Search_Result_Video_ThumeNailImg_MarginRight">
+
+        <ImageView
+            android:layout_width="@dimen/Common_LoadingIcon_02_Width"
+            android:layout_height="@dimen/Common_LoadingIcon_02_Height"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_thumb_symbol_02"
+        />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="@dimen/Search_Result_Video_ThumeNailImg_Width"
+        android:layout_height="@dimen/Search_Result_Video_ThumeNailImg_Height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/Search_Result_Video_ThumeNailImg_MarginLeft"
+        android:layout_marginRight="@dimen/Search_Result_Video_ThumeNailImg_MarginRight"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txt_watched"
+        android:layout_width="@dimen/Common_WatchedView_Width"
+        android:layout_height="@dimen/Common_WatchedView_Height"
+        android:layout_alignTop="@id/img_icon"
+        android:layout_alignLeft="@id/img_icon"
+        android:background="@color/common_watched_view_bg"
+        android:gravity="center"
+        android:textColor="@color/common_watched_view_text"
+        android:text="시청함"
+        android:textSize="@dimen/Common_WatchedView_TextSize"
+        android:visibility="gone"
+    />
+
+    <ImageView
+        android:id="@+id/img_transparent"
+        android:layout_width="@dimen/Search_Result_Video_TransparentImg_Width"
+        android:layout_height="@dimen/Search_Result_Video_TransparentImg_Height"
+        android:background="@color/common_img_transparent_bg"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/img_icon"
+        android:layout_alignStart="@+id/img_icon"
+        android:visibility="visible"
+    />
+
+    <TextView
+        android:id="@+id/txt_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/VodRelativeVideoSingleItem_PlayTime_Height"
+        android:layout_alignBottom="@id/img_icon"
+        android:layout_alignRight="@id/img_icon"
+        android:background="#33000000"
+        android:gravity="center"
+        android:minWidth="@dimen/VodRelativeVideoSingleItem_PlayTime_MinWidth"
+        android:paddingTop="@dimen/VodRelativeVideoSingleItem_PlayTime_Top_Padding"
+        android:paddingLeft="@dimen/VodRelativeVideoSingleItem_PlayTime_LR_Padding"
+        android:paddingRight="@dimen/VodRelativeVideoSingleItem_PlayTime_LR_Padding"
+        android:textColor="#CCFFFFFF"
+        android:textSize="@dimen/VodRelativeVideoSingleItem_PlayTime_TextSize" />
+
+    <!-- 타이틀 옆 "..." 버튼 이미지. 클립범위를 넓히기 위해 padding이 추가됨. -->
+    <FrameLayout
+        android:id="@+id/frm_layout_img_dot_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/Search_Result_Video_TitleTxt_MarginTop"
+        android:paddingRight="@dimen/Search_Result_Video_ViewMore_PaddingRight"
+        android:paddingBottom="@dimen/Search_Result_Video_ViewMore_PaddingBottom"
+        android:paddingLeft="@dimen/Search_Result_Video_ViewMore_PaddingLeft"
+        android:clickable="true"
+    >
+        <ImageView
+            android:id="@+id/img_dot_more"
+            android:layout_width="@dimen/Search_Result_MoreBtn_Width"
+            android:layout_height="@dimen/Search_Result_MoreBtn_Height"
+            android:scaleType="center"
+            android:src="@drawable/com_listmore_btn_selector"
+            android:visibility="gone"
+            android:duplicateParentState="true"
+            tools:ignore="ContentDescription"
+        />
+    </FrameLayout>
+
+    <!-- 타이틀 텍스트 -->
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/Search_Result_Video_TitleTxt_MarginTop"
+        android:layout_toLeftOf="@id/frm_layout_img_dot_more"
+        android:layout_toRightOf="@+id/img_icon"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/common_listitem_title"
+        android:textSize="@dimen/Search_Result_Video_TitleTxt_TextSize"
+        android:lineSpacingExtra="@dimen/Search_Result_Video_TitleTxt_LineSpacingExtra"
+        />
+
+    <!-- Info 레이아웃 -->
+    <TableLayout
+        android:id="@+id/content_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_title"
+        android:layout_marginLeft="@dimen/Search_Result_Video_ContentInfoLayout_MarginLeft"
+        android:layout_marginTop="@dimen/Search_Result_Video_ContentInfoLayout_MarginTop"
+        android:layout_below="@id/txt_title"
+        android:layout_toLeftOf="@id/right_dummy"
+        android:gravity="center_vertical"
+        android:shrinkColumns="0">
+        <TableRow>
+            <TextView
+                android:id="@+id/txt_channel_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Search_Result_Video_ChannelNameTxt_Height"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/common_listitem_sub_title"
+                android:textSize="@dimen/Search_Result_Video_ChannelNameTxt_TextSize"
+            />
+
+            <!-- NOTE: 맨 끝의 좋아요 숫자가 짤리는 문제가 있어서 LinearLayout으로 묶었다. jypark -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                >
+                <!-- NOTE :
+                    Play아이콘, LikeIt아이콘이 별도로 존재하는 이유
+                    디자인상 하트 아이콘을 플레이아이콘 크기에 맞추기 무리가 있어서 다를 수 밖에 없다고 함.
+                    따라서 재생아이콘, 하트아이콘 여부를 판단해서 적절히 show/hide를 해준다.
+                 -->
+                <ImageView
+                    android:id="@+id/img_count"
+                    android:layout_width="@dimen/Search_Result_Video_PlayCountImg_Width"
+                    android:layout_height="@dimen/Search_Result_Video_PlayCountImg_Height"
+                    android:layout_marginLeft="@dimen/Search_Result_Video_PlayCountImg_MarginLeft"
+                    android:layout_marginRight="@dimen/Search_Result_Video_PlayCountImg_MarginRight"
+                    android:scaleType="center"
+                    android:src="@drawable/com_img_viewcount_ic_b"
+                    android:layout_marginBottom="@dimen/Search_Result_Video_PlayCountImg_MarginBottom"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/txt_play_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:textColor="@color/common_listitem_sub_title"
+                    android:textSize="@dimen/Search_Result_Video_PlayCountTxt_TextSize"
+                />
+
+                <!-- 재생수, 좋아요 카운트가 함께 나올때 재생수, 재생수와 좋아요 카운트 사이의 여백 -->
+                <View
+                    android:id="@+id/margin_between_play_and_likeit"
+                    android:layout_width="@dimen/Search_Result_Video_LikeImg_MarginView_Left"
+                    android:layout_height="@dimen/Search_Result_Video_LikeImg_Height"
+                    android:visibility="gone"
+                />
+
+                <ImageView
+                    android:id="@+id/img_likeit"
+                    android:layout_width="@dimen/Search_Result_Video_LikeImg_Width"
+                    android:layout_height="@dimen/Search_Result_Video_LikeImg_Height"
+                    android:layout_marginTop="@dimen/Search_Result_Video_LikeItImg_MarginTop"
+                    android:layout_marginLeft="@dimen/Search_Result_Video_LikeItImg_MarginLeft"
+                    android:layout_marginRight="@dimen/Search_Result_Video_LikeItImg_MarginRight"
+                    android:scaleType="center"
+                    android:src="@drawable/com_img_like_ic"
+                    android:visibility="gone"
+                    tools:ignore="ContentDescription"
+                />
+                <TextView
+                    android:id="@+id/txt_likeit_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:singleLine="true"
+                    android:ellipsize="none"
+                    android:textColor="@color/common_listitem_sub_title"
+                    android:visibility="gone"
+                    android:textSize="@dimen/Search_Result_Video_PlayCountTxt_TextSize"
+                />
+            </LinearLayout>
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

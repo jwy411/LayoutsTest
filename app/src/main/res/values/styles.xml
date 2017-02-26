@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="OnOffButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48.00dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
 </resources>

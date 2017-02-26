@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+        android:color="@color/permission_cancel_btn"/>
+
+
+
+    <stroke
+        android:width="0.5dp"
+        android:color="#D1D7DA" />
+    <corners
+        android:bottomLeftRadius="16.5dp"
+        android:bottomRightRadius="16.5dp"
+        android:topLeftRadius="16.5dp"
+        android:topRightRadius="16.5dp" />
+</shape>

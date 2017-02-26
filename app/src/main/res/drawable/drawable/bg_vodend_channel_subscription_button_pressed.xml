@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid 
+        android:color="#FFF8F8F8"/>
+
+    <stroke
+        android:width="@dimen/SubscriptionButton_Stroke"
+        android:color="@color/Subscription_Stroke_Color"/>
+    
+    <size android:height="@dimen/SubscriptionButton_Height" />
+
+    <corners
+        android:bottomRightRadius="@dimen/SubscriptionButton_Radius"
+        android:bottomLeftRadius="@dimen/SubscriptionButton_Radius"
+        android:topRightRadius="@dimen/SubscriptionButton_Radius"
+        android:topLeftRadius="@dimen/SubscriptionButton_Radius"/>
+
+</shape>

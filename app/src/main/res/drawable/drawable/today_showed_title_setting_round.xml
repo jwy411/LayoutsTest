@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid 
+        android:color="@color/today_showed_title_setting_bg_selector"/>
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/today_showed_title_delete_all_stroke_selector" />
+
+    <size android:height="@dimen/TodayShowedTitleView_stroke_height" />
+    
+    <corners
+        android:bottomLeftRadius="16.5dp"
+        android:bottomRightRadius="16.5dp"
+        android:topLeftRadius="16.5dp"
+        android:topRightRadius="16.5dp" />
+
+</shape>

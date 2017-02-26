@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.00dp"
+            android:layout_marginLeft="25.00dp"
+            android:text="알림 설정"
+            android:textColor="#909ca3"
+            android:textSize="13dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.50dp"
+            android:background="#e0e0e0"
+            android:layout_marginLeft="23.00dp"
+            android:layout_marginRight="23.00dp" />
+
+        <LinearLayout
+            style="@style/OnOffButton"
+            android:id="@+id/btn_setting_noti_on_off"
+            android:layout_width="match_parent"
+            android:layout_height="48.00dp"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/SettingOnOffLayoutButton_TextView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25.00dp"
+                android:gravity="center_vertical"
+                android:textColor="#26292c"
+                android:textSize="14.00dp"
+                android:duplicateParentState="true"
+                android:text="알림 수신"/>
+            <TextView
+                android:id="@+id/setting_btn_on"
+                android:layout_width="43.00dp"
+                android:layout_height="23.50dp"
+                android:layout_marginRight="23.00dp"
+                android:background="@drawable/settingview_on_btn"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingTop="1.00dp"
+                android:text="ON"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:textColor="#00CC52"
+                android:textSize="10.00dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.50dp"
+            android:background="#efefef"
+            android:layout_marginLeft="23.00dp"
+            android:layout_marginRight="23.00dp"
+        />
+    </LinearLayout>
+</merge>

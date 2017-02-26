@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid
+        android:color="@color/My_Subscription_EditCompleteBtn_Default" />
+
+    <stroke
+        android:width="@dimen/MySubscriptionActivity_EditBtn_Stroke_Default"
+        android:color="@color/My_Subscription_EditCompleteBtn_Stroke_Default" />
+
+    <size
+        android:height="@dimen/MySubscriptionActivity_EditBtn_Height" />
+
+    <corners
+        android:bottomRightRadius="16.5dp"
+        android:bottomLeftRadius="16.5dp"
+        android:topRightRadius="16.5dp"
+        android:topLeftRadius="16.5dp" />
+
+</shape>

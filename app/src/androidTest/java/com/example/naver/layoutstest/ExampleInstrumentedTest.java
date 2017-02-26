@@ -28,6 +28,5 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.example.naver.layoutstest", appContext.getPackageName());
-        assertEquals(48, mActivityRule.getActivity().findViewById(R.id.button).getLeft());
     }
 }
